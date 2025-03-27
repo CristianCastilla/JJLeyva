@@ -1,19 +1,51 @@
-body {
-    font-family: Arial, sans-serif;
+/* General */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
 }
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #ffffffe8;
+    color: #000000;
+    padding: 20px;
+    display: flex; /* Usamos flexbox */
+    justify-content: space-between; /* Alineamos el logo a la izquierda y el texto a la derecha */
+    align-items: center; /* Alineamos el logo y el texto verticalmente */
+}
+
+header .logo h1 {
+    font-size: 3rem; /* Aumentamos el tamaño del texto del logo */
+    margin-bottom: 10px;
+    align-items: center;
+    display: flex;
+}
+img {
+    height: 20vh                                                        ;
+}
+nav {
+    margin-left: auto; /* Empuja el menú hacia la derecha */
+}
+
 
 nav ul {
     list-style: none;
-    padding: 0;
+    display: flex;
+    margin-right: 70vh;
+    
 }
 
 nav ul li {
@@ -23,19 +55,214 @@ nav ul li {
 
 nav ul li a {
     color: #fff;
-    text-decoration: none;
+    font-size: 1.5rem; /* Aumentamos el tamaño del texto del menú */
 }
 
-section {
-    padding: 2rem;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
+.hero {
+    background-color: #000000d3;
+    color: white;
     text-align: center;
-    padding: 1rem;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    padding: 60px 20px;
 }
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero .btn {
+    background-color: #fff;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #000000;
+    color: white;
+}
+
+/* Servicios */
+#servicios {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+#servicios h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1rem;
+}
+
+/* Sobre Nosotros */
+#nosotros {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Formulario de Contacto */
+#contacto {
+    padding: 40px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+}
+
+#contacto form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 10px;
+}
+
+#contacto input, #contacto textarea {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.container {
+    display: flex; /* Usamos flexbox */
+    justify-content: space-between;/* Coloca los divs a los extremos */
+    margin: 50px 0; /* Espaciado vertical */
+    
+    
+}
+
+/* Estilo para instalacionesjjleyva */
+.instalacionesjjleyva {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: left;
+    width: 45%;
+    margin-right: 10px; /* Ajusta el margen derecho */
+}
+
+.instalacionesjjleyva h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.instalacionesjjleyva img {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+/* Estilo para quienessomos */
+.quienessomos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 45%;
+    margin-left: 10px; /* Ajusta el margen izquierdo */
+}
+
+.quienessomos h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.quienessomos p {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+header {
+    background-color: #000000e8;  /* Fondo oscuro */
+    color: #fff;
+    padding: 20px 50px;  /* Espaciado a los lados */
+    display: flex; /* Usamos flexbox */
+    justify-content: center; /* Alineamos el logo a la izquierda y el menú a la derecha */
+    align-items: center; /* Alineamos el logo y el texto verticalmente */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+header .logo img {
+    height: 100px; /* Ajusta el tamaño del logo */
+    margin-right: 60px;  /* Espacio entre el logo y el nombre */
+}
+
+header .logo h1 {
+    font-size: 2rem; /* Tamaño de texto del logo */
+    margin: 0; /* Eliminamos márgenes */
+}
+nav {
+    margin-right: auto; /* Empuja el menú hacia la izquierda */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;  /* Eliminamos márgenes */
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 30px;  /* Espacio entre los elementos del menú */
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1.2rem;  /* Aumentamos el tamaño del texto del menú */
+    text-transform: uppercase; /* Convertir texto del menú a mayúsculas */
+    padding: 5px 10px;
+    
+}
+
+nav ul li a:hover {
+    color: #2353ad;
+    
+}
+footer{
+    margin-top: 20px;
+}
+.borde {
+    border-bottom: 2px solid #000;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+.encabezado {
+    margin-bottom: 10px;
+}
+
